@@ -1,0 +1,491 @@
+/* Reset CSS */
+
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,
+acronym,address,big,cite,code,del,dfn,em,
+img,ins,kbd,q,s,samp,small,strike,strong,
+sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,
+ul,li,fieldset,form,label,legend,table,
+caption,tbody,tfoot,thead,tr,th,td,article,
+aside,canvas,details,embed,figure,figcaption,
+footer,header,hgroup,menu,nav,output,ruby,
+section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* Fonts */
+
+
+@font-face {
+    font-family: 'Nasalization';
+    src: url("./Fonts/nasalization-rg.otf");
+}
+
+
+/* Parametres */
+
+
+.outlineImageWhite {
+    -webkit-filter: drop-shadow(2px 2px 0 white)
+                    drop-shadow(-2px 2px 0 white)
+                    drop-shadow(2px -2px 0 white)
+                    drop-shadow(-2px -2px 0 white);
+
+    filter: drop-shadow(2px 2px 0 white)
+            drop-shadow(-2px 2px 0 white)
+            drop-shadow(2px -2px 0 white)
+            drop-shadow(-2px -2px 0 white);
+}
+.outlineImageBlack {
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+                    drop-shadow(-1px 1px 0 black)
+                    drop-shadow(1px -1px 0 black)
+                    drop-shadow(-1px -1px 0 black);
+
+    filter: drop-shadow(1px 1px 0 black)
+            drop-shadow(-1px 1px 0 black)
+            drop-shadow(1px -1px 0 black)
+            drop-shadow(-1px -1px 0 black);
+}
+
+
+html{
+    overflow: hidden;
+    font-family: 'Nasalization';
+}
+
+.cases {
+    display: flex;
+    width: 100vw;
+    justify-content: stretch;
+
+    height: 75vh;
+
+    background-color: white;
+
+    overflow: hidden;
+
+}
+
+
+/* Screens */
+
+
+.col {
+    transition: all 1s ease-out;
+    transform: translateY(-250vh);
+    top: 35%;
+    width: 50%;
+    height: 300vh;
+
+    pointer-events: none;
+}
+
+.colonnes {
+    background: white;
+    border: solid 2px black;
+
+    position: relative;
+
+    background: linear-gradient(180deg, rgba(106, 0, 0, 1) 0%, rgba(77, 24, 37, 1) 14%, rgba(0, 0, 0, 1) 30%, rgba(2, 0, 36, 1) 45%, rgba(7, 6, 94, 1) 55%, rgba(0, 18, 148, 1) 68%, rgba(0, 206, 214, 1) 87%, rgba(220, 254, 255, 1) 100%);
+    background-image: linear-gradient(
+  0deg,
+  hsl(185deg 100% 59%) 0%,
+  hsl(189deg 100% 48%) 3%,
+  hsl(194deg 100% 46%) 6%,
+  hsl(199deg 100% 43%) 11%,
+  hsl(205deg 100% 40%) 15%,
+  hsl(210deg 100% 36%) 20%,
+  hsl(217deg 100% 30%) 26%,
+  hsl(227deg 100% 24%) 31%,
+  hsl(240deg 100% 20%) 37%,
+  hsl(240deg 100% 20%) 43%,
+  hsl(240deg 100% 20%) 49%,
+  hsl(240deg 100% 20%) 54%,
+  hsl(240deg 100% 20%) 60%,
+  hsl(240deg 100% 20%) 66%,
+  hsl(240deg 100% 20%) 71%,
+  hsl(240deg 100% 20%) 76%,
+  hsl(273deg 100% 20%) 81%,
+  hsl(300deg 100% 20%) 85%,
+  hsl(318deg 100% 28%) 89%,
+  hsl(330deg 100% 35%) 93%,
+  hsl(338deg 100% 41%) 96%,
+  hsl(344deg 100% 45%) 98%,
+  hsl(3deg 92% 56%) 99%,
+  hsl(22deg 100% 50%) 100%
+);
+    z-index: 1;
+    
+}
+
+.colonnesCalc {
+    background: transparent;
+
+    position: fixed;
+
+    z-index: 5;
+}
+
+#screen2Calc {
+    left: 50%;
+}
+
+
+.topDivS1{
+    position: relative;
+    width: 85%;
+    height: 80vh;
+}
+
+.mars{
+    background-image: url("./Images/Mars.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: relative;
+    top: -80%;
+
+    width: 120%;
+    height: 120%;
+}
+
+#screen1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Decors */
+
+
+.Cloud {
+    background-image: url("./Images/Clound.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+
+    bottom: 10%;
+
+    width: 20%;
+    height: 10%;
+
+    transition: all 0.25s ease-out;
+    display: none;
+}
+
+.Star{
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 100px;
+
+    position: absolute;
+
+    box-shadow: 0px 0px 10px white, 0px 0px 5px white;
+
+}
+
+
+/* Fusées */
+
+
+.fusee {
+    pointer-events: none;
+    z-index: 5;
+    top: 55%;
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    transition: all 0.25s ease-out;
+}
+
+.fuseeSpaceX {
+    background-image: url("./Images/Fusée\ rouge.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fuseeNasa {
+    background-image: url("./Images/Fusée\ bleue.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    left: 50%;
+
+    z-index: 2;
+}
+
+.fireGif{
+    background-image: url("./Images/fire.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*transform: rotate(180deg) translateY(-80%) scale(0);*/
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+
+    bottom: 0%;
+
+    transition: all 0.25s linear;
+}
+
+
+/* Sol */
+
+
+.sol{
+    width: 100%;
+    height: 10vh;
+    bottom: 0;
+
+    position: absolute;
+
+    border-top: solid 5px black;
+
+    background-color: #ccc;
+}
+
+.Supporter{
+    background-image: url("./Images/Banana.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    width: 4vw;
+    height: 4vw;
+
+    position: absolute;
+
+    bottom: 20px;
+}
+
+
+/* Menu */
+
+
+.menu{
+    position: absolute;
+
+    width:100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #0005;
+
+    -webkit-box-shadow: inset 0px 0px 50px 35px #000000; 
+    box-shadow: inset 0px 0px 100px 35% #000000;
+
+    z-index: 50;
+}
+
+#victory{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    margin: 2%;
+}
+
+.playButton{
+    background-color: black;
+    padding: 2%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.playButton h2{
+    color: white;
+    font-size: 50px;
+}
+
+
+/* Dashboard */
+
+
+.dashboard{
+    background-color: #181820;
+    height: 100%;
+    width: 100%;
+
+    z-index: 10;
+
+    position: absolute;
+
+    border-top: solid 5px black;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.lines{
+    display: flex;
+    justify-content: space-around;
+}
+
+.keyW{
+    background-image: url("./Images/toucheWpng.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 8vw;
+    height: 8vw;
+
+}
+
+.keyUp{
+    background-image: url("./Images/touchearrowpng.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 8vw;
+    height: 8vw;
+
+    -webkit-filter: drop-shadow(2px 2px 0 white)
+                    drop-shadow(-2px 2px 0 white)
+                    drop-shadow(2px -2px 0 white)
+                    drop-shadow(-2px -2px 0 white);
+    filter: drop-shadow(2px 2px 0 white)
+            drop-shadow(-2px 2px 0 white)
+            drop-shadow(2px -2px 0 white)
+            drop-shadow(-2px -2px 0 white);
+}
+
+.lineScore{
+    width: 20%;
+    height: 25%;
+    background-color: darkblue;
+    background-image: linear-gradient(
+  90deg,
+  hsl(185deg 100% 59%) 0%,
+  hsl(189deg 100% 48%) 3%,
+  hsl(194deg 100% 46%) 6%,
+  hsl(199deg 100% 43%) 11%,
+  hsl(205deg 100% 40%) 15%,
+  hsl(210deg 100% 36%) 20%,
+  hsl(217deg 100% 30%) 26%,
+  hsl(227deg 100% 24%) 31%,
+  hsl(240deg 100% 20%) 37%,
+  hsl(240deg 100% 20%) 43%,
+  hsl(240deg 100% 20%) 49%,
+  hsl(240deg 100% 20%) 54%,
+  hsl(240deg 100% 20%) 60%,
+  hsl(240deg 100% 20%) 66%,
+  hsl(240deg 100% 20%) 71%,
+  hsl(240deg 100% 20%) 76%,
+  hsl(273deg 100% 20%) 81%,
+  hsl(300deg 100% 20%) 85%,
+  hsl(318deg 100% 28%) 89%,
+  hsl(330deg 100% 35%) 93%,
+  hsl(338deg 100% 41%) 96%,
+  hsl(344deg 100% 45%) 98%,
+  hsl(3deg 92% 56%) 99%,
+  hsl(22deg 100% 50%) 100%
+);
+    border-radius: 50px;
+
+    border: solid 1px #fff5;
+
+    position: relative;
+
+    margin: 2%;
+}
+#rocketScore1{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("./Images/Fusée\ rouge.png");
+
+    width: 10%;
+    height: 300%;
+
+    position: absolute;
+
+    left: 90%;
+    top: -100%;
+    transform: rotate(90deg);
+
+    z-index: 5;
+}
+
+#rocketScore2{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("./Images/Fusée\ bleue.png");
+
+    width: 10%;
+    height: 300%;
+
+    position: absolute;
+
+    left: 90%;
+    top: -100%;
+    transform: rotate(90deg);
+
+    z-index: 5;
+}
+
+.earthDraw{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("./Images/earthDraw.png");
+
+    width: 4vw;
+    height: 3vw;
+
+    position: absolute;
+    top: -100%;
+    left: -12%;
+}
+
+.marsDraw{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("./Images/marsDraw.png");
+
+    width: 4vw;
+    height: 2vw;
+
+    position: absolute;
+    top: -50%;
+    right: -10%;
+}
+
+.scores {
+    transform: rotate(-90deg) translateY(-100%);
+    color: white;
+}
+
+.scorePoints{
+    position: absolute;
+    top: 3%;
+    font-size: 40px;
+    color: white;
+
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 0.5% 1%;
+}

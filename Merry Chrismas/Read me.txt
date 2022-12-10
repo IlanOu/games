@@ -1,0 +1,20 @@
+Merry Chrismas :
+
+
+
+Le but est de retrouver l'intru. Il y a 3 niveaux :
+
+- Niveau Facile : Nombre de clicks illimités avec une aide (dégradé de couleur : plus on est proche, plus c'est jaune. Si c'est rouge c'est que t'es loin)
+- Niveau Intermédiaire : Plus difficile, évidement. Nombre de clicks limités à 10, toujours avec l'aide.
+- Niveau Dieu : Je suis sympa je t'ai accordé 20 clicks... Par contre au lieu de 64 cases, il y en a 100 ! et bien entendu pas besoin de l'aide, sinon c'est trop facile.
+
+
+Plus :
+Pour chaque niveau il y a une musique différente qui correspond avec son thème. Si la musique te gonfle il y a un bouton mute, et des boutons de volume.
+
+
+Encore plus :
+Si tu veux rejouer, click simplement sur le niveau de ton choix.
+
+
+Bon jeu !

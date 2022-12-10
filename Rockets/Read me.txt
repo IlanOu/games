@@ -1,0 +1,14 @@
+Rockets :
+
+
+Le but étant de défoncer ton clavier alors trouve un rival à ta hauteur et choisissez chacun votre équipe :
+- Rouge (W)
+- Bleu (↑, la flèche qui pointe vers le haut)
+
+
+Plus:
+- Pour un effet de distance, j'ai fais de la paralax.
+- Pour le fun j'ai mis des bananes supporter qui sont de plus en plus nombreuses en fonction de ton score !
+
+
+Bon jeu !

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./Images/Icon.png">
+    <title>Rockets</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="menu">
+
+        <div id="victory">
+
+        </div>
+
+        <div class="playButton" onclick="start()">
+            <h2>Jouer</h2>
+        </div>
+
+    </div>
+
+    <div class="cases" id="cases">
+
+        <div class="fuseeNasa fusee outlineImageBlack" id="rocket2" style="top: 55%;">
+            <div class="fireGif" id="fireRocket2" style="transform: rotate(180deg) scale(0)">
+
+            </div>
+        </div>
+        <div class="fuseeSpaceX fusee outlineImageBlack" id="rocket1" style="top: 55%;">
+            <div class="fireGif" id="fireRocket1" style="transform: rotate(180deg) scale(0)">
+
+            </div>
+        </div>
+
+        <div class="screen1 col colonnesCalc" id="screen1Calc">
+            <div class="Cloud"></div>
+        </div>
+
+        <div class="screen2 col colonnesCalc" id="screen2Calc">
+            <div class="Cloud"></div>
+        </div>
+
+
+        <div class="screen1 col colonnes" id="screen1">
+            <div class="topDivS1">
+                <div class="mars" id="mars">
+                </div>
+            </div>
+
+            <div class="sol" id="solS1">
+
+            </div>
+
+            <div class="Cloud">
+            </div>
+
+        </div>
+        <div class="screen2 col colonnes" id="screen2">
+            <div class="topDivS1">
+                <div class="mars" id="mars">
+
+                </div>
+            </div>
+
+            <div class="sol" id="solS2">
+
+            </div>
+
+            <div class="Cloud">
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="dashboard">
+        <div class="lines">
+            <div class="lineScore">
+                <div id="rocketScore1">
+                    <div id="score1" class="scores">
+                        0%
+                    </div>
+                </div>
+                <div class="earthDraw">
+    
+                </div>
+                <div class="marsDraw">
+    
+                </div>
+            </div>
+    
+            <div class="scorePoints">
+                0-0
+            </div>
+
+            <div class="lineScore">
+                <div id="rocketScore2">
+                    <div id="score2" class="scores">
+                        0%
+                    </div>
+                </div>
+                <div class="earthDraw">
+    
+                </div>
+                <div class="marsDraw">
+    
+                </div>
+            </div>
+        </div>
+        <div class="lines">
+            <div class="keyW outlineImageWhite">
+
+            </div>
+            <div class="keyUp outlineImageWhite">
+                
+            </div>
+        </div>
+        
+
+        
+        
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

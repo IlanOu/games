@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/ico" href="./Images/chapeau.ico">
+    <title>Merry Chrismas</title>
+</head>
+<body>
+
+    <div class="All" id="all">
+
+        <canvas id="canvas"></canvas>
+
+        <h2 class="Win">Gagné !!</h2>
+        
+
+        <div class="col1" id="col1">
+            <div class="title">
+                <h1>MERRY CHRISMAS</h1>
+            </div>
+            
+        
+            <div class="backSantaClaus" id="backSantaClaus">
+        
+            </div>
+        </div>
+        
+        <div class="col2">
+            <h3 id="LevelN">Niveau Facile</h3> 
+            <div class="grid" id="grid">
+
+            </div>
+        </div>
+
+
+
+        <audio class="music" id="playerNormal" loop src="./Musiques/Carol Of The Bells Classic.mp3"></audio>
+        <audio class="music" id="playerTrap" lopp src="./Musiques/Carol of The Bells Trap.mp3"></audio>
+        <audio class="music" id="playerEpic" loop src="./Musiques/Carol of The Bells Epic.mp3"></audio>
+
+        <div class="col3">
+            <div class="backGifts">
+    
+            </div>
+    
+            <div class="column">
+                <h2 id="Score">Score : 0</h2>
+
+                <p id="instruction1">
+                    Trouvez l'intrus : <img src="./Images/PAPANOELCase.jpg" width="50" height="50" style="filter: grayscale(1); border-radius: 10%;">
+                </p>
+
+                <p id="instruction2">
+                    Trouvez l'intrus : <img src="./Images/PAPANOELCase.jpg" width="50" height="50" style="filter: grayscale(1); border-radius: 10%;">
+                    en 10 essais !
+                </p>
+
+                <p id="instruction3">
+                    Trouvez l'intrus : <img src="./Images/PAPANOELCase.jpg" width="50" height="50" style="filter: grayscale(1); border-radius: 10%;">
+                    en 20 essais sur 100 cases
+                </p>
+
+                <div class="songController">
+                    <img src="./Images/mute.png" id="noSong" width="50" height="50" style="display: none;">
+                    <img src="./Images/volume.png" id="Song" width="50" height="50">
+                    
+                    <img src="./Images/volplus.png" width="50" height="50" onclick="document.querySelectorAll('.music').forEach((item)=>{
+                        item.volume += 0.1;
+                    })">
+                    <img src="./Images/volmoins.png" width="50" height="50" onclick="document.querySelectorAll('.music').forEach((item)=>{
+                        item.volume -= 0.1;
+                    })">
+
+                </div>
+
+                <div class="lvls">
+                    <a class="replay">Niveau de jeu:</a>
+        
+                    <a class="levels" id="level1Button">Facile</a>
+                    <a class="levels" id="level2Button">Intermédiaire</a>
+                    <a class="levels" id="level3Button">Dieu</a>
+                </div>
+                
+
+
+                
+            </div>
+        </div>
+
+
+        <div id="snowBottom">
+
+        </div>
+
+        <div id="stalactites">
+            
+        </div>
+    
+        
+    
+        
+    </div>
+    
+
+
+    
+
+    
+
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
